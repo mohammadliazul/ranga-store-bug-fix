@@ -20,8 +20,8 @@ const showProducts = (products) => {
       <p>Overall Rating: ${product.rating.rate}</p>
       <p>Reviews: ${product.rating.count}</p>
       <h4>Price: $ ${product.price}</h4>
-      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now fw-bold add-cart-btn">Add to Cart</button>
-      <button id="details-btn" class="text-white fw-bold details-btn">Details</button></div>
+      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now fw-bold add-cart-btn rounded">Add to Cart</button>
+      <button id="details-btn" class="text-white fw-bold details-btn rounded">Details</button></div>
       `;
     document.getElementById("all-products").appendChild(div);
   }
@@ -82,15 +82,5 @@ const updateTotal = () => {
     getInputValue("total-tax");
   document.getElementById("total").innerText = grandTotal.toFixed(2);
 };
-
-// const rate = document.getElementById("ratingid");
-// let cw = window.rate.clientWidth;
-
-// const ratingStar = (stars) => {
-//   window.document.rate.style.width = Math.round(cw * (stars / 5)) + 'px';
-// }
-
-
-
 
 loadProducts();

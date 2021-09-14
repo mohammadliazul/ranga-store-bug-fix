@@ -2,6 +2,9 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+header{
+  background-color: rgb(48, 59, 70);
+}
 .main{
   margin-top: 100px;
 }
@@ -13,7 +16,7 @@ body {
   margin: auto;
   align-items: center;
   justify-content: center;
-  margin-right: 20px;
+  margin-right: 25px;
 }
 .product-title{
   height: 100px;
@@ -37,7 +40,7 @@ body {
 .cart {
   width: 350px;
   padding: 10px;
-  box-shadow: 10px 10px 20px gray;
+  box-shadow: 5px 5px 30px 5px rgba(165, 164, 164, 0.657);
   border-radius: 5px;
 
   position: fixed;
@@ -65,8 +68,11 @@ body {
   border-radius: 5px;
   padding: 6px 12px;
 }
-
-
+footer{
+  background-color: rgb(57, 69, 81);
+  height: 120px;
+}
+/* Media query start */
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
